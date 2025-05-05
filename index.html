@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡El Asombroso Ciclo del Agua en Puerto Rico!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>¡Descubre el Viaje Secreto del Agua!</h1>
+        <p>Un aprendizaje interactivo para jóvenes exploradores de Puerto Rico.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#evaporacion">Evaporación</a></li>
+            <li><a href="#condensacion">Condensación</a></li>
+            <li><a href="#precipitacion">Precipitación</a></li>
+            <li><a href="#coleccion">Colección</a></li>
+            <li><a href="#impacto">Impacto en Puerto Rico</a></li>
+            <li><a href="#prueba">¡Ponte a Prueba!</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio" class="pagina-principal">
+            <h2>¡Bienvenidos al Mundo del Ciclo del Agua!</h2>
+            <p>¿Alguna vez te has preguntado de dónde viene la lluvia que moja nuestros coquíes o cómo el agua llega a nuestros ríos y playas? ¡Prepárate para un viaje fascinante a través del ciclo del agua!</p>
+            <img src="images/ciclo_agua_pr.jpg" alt="Diagrama del ciclo del agua en Puerto Rico" class="imagen-principal">
+        </section>
+
+        <section id="evaporacion" class="etapa">
+            <h2>☀️ Evaporación: El Agua se Desvanece... ¡Pero no por Completo!</h2>
+            <p>Imagina el sol brillando fuerte en nuestras playas como Luquillo o Boquerón. Ese calor hace que el agua de los océanos, ríos como el Río Grande de Loíza y lagos como el Lago Caonillas se convierta en un gas invisible llamado vapor de agua y suba al cielo. ¡Es como magia!</p>
+            <img src="images/evaporacion_playa.jpg" alt="Evaporación en una playa de Puerto Rico">
+        </section>
+
+        <section id="condensacion" class="etapa">
+            <h2>☁️ Condensación: ¡Las Nubes se Forman!</h2>
+            <p>A medida que el vapor de agua sube, el aire se enfría. Este vapor se junta con pequeñas partículas de polvo y forma pequeñas gotitas de agua o cristales de hielo, ¡creando las nubes que vemos sobre El Yunque o la Cordillera Central!</p>
+            <img src="images/condensacion_nubes.jpg" alt="Nubes sobre las montañas de Puerto Rico">
+        </section>
+
+        <section id="precipitacion" class="etapa">
+            <h2>🌧️ Precipitación: ¡El Cielo Nos Regala Agua!</h2>
+            <p>Cuando las gotitas de agua o los cristales de hielo en las nubes se hacen muy pesados, caen a la tierra en forma de lluvia (como la que a veces nos sorprende en un paseo por el Viejo San Juan), nieve (¡aunque no es común aquí, podemos aprender sobre ella!), aguanieve o granizo.</p>
+            <img src="images/precipitacion_lluvia.jpg" alt="Lluvia cayendo en Puerto Rico">
+        </section>
+
+        <section id="coleccion" class="etapa">
+            <h2>🏞️ Colección: El Agua Regresa a Casa</h2>
+            <p>El agua que cae a la tierra se acumula en ríos, lagos, océanos y también se filtra bajo el suelo (agua subterránea). Esta agua es vital para nuestros embalses como el de Carraízo, que nos proveen agua para nuestras casas y para regar las cosechas de nuestros agricultores.</p>
+            <img src="images/coleccion_rio.jpg" alt="Un río en Puerto Rico">
+        </section>
+
+        <section id="impacto" class="etapa">
+            <h2>💧 El Ciclo del Agua y Puerto Rico: ¡Estamos Conectados!</h2>
+            <p>El ciclo del agua es súper importante para nuestra isla:</p>
+            <ul>
+                <li>**Agua para todos:** Nos da el agua que necesitamos para beber, cocinar y ducharnos.</li>
+                <li>**Agricultura:** Ayuda a que crezcan las frutas como el mango y el pana, y el café de nuestras montañas.</li>
+                <li>**Naturaleza:** Mantiene vivos nuestros bosques tropicales, los ríos donde viven peces y los hermosos arrecifes de coral.</li>
+                <li>**Energía:** Se utiliza para generar energía hidroeléctrica en algunas de nuestras represas.</li>
+                <li>**Peligros:** A veces, cuando llueve mucho, pueden ocurrir inundaciones que afectan nuestras comunidades. ¡Por eso es importante entender el ciclo del agua!</li>
+            </ul>
+        </section>
+
+        <section id="prueba" class="interactivo">
+            <h2>¡Ponte a Prueba!</h2>
+            <p>¿Cuánto has aprendido sobre el ciclo del agua? ¡Arrastra y suelta las etapas en el orden correcto!</p>
+            <div id="juego-ciclo">
+                <div id="etapa-arrastrable-1" draggable="true" data-etapa="evaporacion">Evaporación</div>
+                <div id="etapa-arrastrable-2" draggable="true" data-etapa="condensacion">Condensación</div>
+                <div id="etapa-arrastrable-3" draggable="true" data-etapa="precipitacion">Precipitación</div>
+                <div id="etapa-arrastrable-4" draggable="true" data-etapa="coleccion">Colección</div>
+                <div id="zona-destino-1" class="zona-destino" data-orden="1"></div>
+                <div id="zona-destino-2" class="zona-destino" data-orden="2"></div>
+                <div id="zona-destino-3" class="zona-destino" data-orden="3"></div>
+                <div id="zona-destino-4" class="zona-destino" data-orden="4"></div>
+            </div>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Aprendiendo sobre el Ciclo del Agua en Puerto Rico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
